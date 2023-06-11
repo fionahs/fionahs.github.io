@@ -1,0 +1,259 @@
+/*-----------Colors
+#2B2D42 - dark blue
+#8D99AE - light blue
+#EDF2F4 - blue to white
+#EF233C - red
+
+#26734d - Dark background green
+#bef1d8 - light green for text 
+#749685 - light greyish green
+#729c87 - light green
+#e6f3e5 - Light greenish yellow 1
+-------------------*/
+
+
+
+/*---------------------------Global styles-----------------------*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: "caveat", cursive;
+    font-weight: 400;
+}
+h1 {
+    font-size: 80px;
+}
+h2 {
+    font-size: 48px;
+}
+h3 {
+    margin: 0;
+}
+
+
+/*---------------------------Navigation----------------------*/
+nav {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 0;
+}
+
+nav a {
+    display: inline-block;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #26734d;
+}
+
+@media (min-width: 440px) {
+    nav a {
+        margin: 14px;
+        font-size: 16px;
+    }
+}
+
+/*---------------------------Header----------------------*/
+header {
+    position: relative;
+    padding-top: 50px;
+    text-align: center;
+    background-color: #26734d;
+    color: #bef1d8;
+}
+
+header h1, header h2 {
+    color: #EDF2F4;
+}
+
+h1 {
+    margin: 0;
+}
+
+.content-wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 60px 50px;
+    max-width: 950px;
+    overflow: hidden;
+}
+
+@media (min-width: 935px) {
+    .content-wrap {
+        flex-direction: row;
+    }
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+@media (min-width: 440px) {
+    .profile-img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (min-width: 935px) {
+    .profile-img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+.btn {
+    text-decoration: none;
+    background: #b1394d;
+    color: white;
+    padding: 10px 5px;
+}
+
+@media (min-width: 440px) {
+    .btn {
+        padding: 10 px;
+    }
+}
+
+.download {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+/*------------------------------------School------------------------------------*/
+.school {
+    padding-top: 40px;
+    background-color: #e6f3e5;
+}
+
+.sch-wrapper {
+    margin: 0 auto;
+    padding: 20px 30px 60px 30px;
+    max-width: 950px;
+}
+
+h3~p {
+    margin: 0;
+}
+
+ul {
+    margin-top: 0;
+}
+
+
+/*------------------------------------Skills------------------------------------*/
+.skills {
+    padding: 40px 0;
+    background: linear-gradient(rgba(141, 153, 174, 0.5), rgba(141, 153, 174, 0.3)),
+                url(assets/fall2.jpg) no-repeat fixed;
+    background-size: cover;
+    color: white;
+}
+
+.skills-wrapper {
+    margin: 0 auto;
+    padding: 20px 30px 50px 30px;
+    max-width: 950px;
+}
+
+ul {
+    margin-top: 0;
+}
+
+
+/*------------------------------------Projects-----------------------------------*/
+.projects {
+    padding-top: 40px;
+    background-color: #c3f7cf;
+}
+
+.work-wrapper {
+    margin: 0 auto;
+    padding: 20px 30px 50px 30px;
+    max-width: 950px;
+}
+
+.job-wrapper {
+    display: block;
+    padding-bottom: 30px;
+}
+
+@media (min-width: 935px) {
+    .job-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        column-gap: 30px;
+    }
+}
+
+h3~p {
+    margin: 0;
+}
+
+@media (min-width: 935px) {
+    .job-description p:first-of-type {
+        margin-top: 0;
+    }
+}
+
+ol li {
+    margin: 8px 0;
+    padding-left: 15px;
+}
+
+ol li a {
+    color: blue;
+}
+
+
+/*------------------------------------Footer----------------------------------------*/
+footer {
+    text-align: center;
+    background-color: #e6f3e5;
+    color: #26734d;
+}
+
+.contact-wrapper {
+    margin: 0 auto;
+    padding:  50px 0;
+    max-width: 900px;
+}
+
+.contact-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+}
+
+.media-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border:  #8D99AE solid 2px;
+}
+
+.media-pic:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(35, 56, 152, 0.4);
+}
+
+p+h3 {
+    margin-top: 30px;
+}
+
+footer p {
+    margin-top: 50px;
+}
